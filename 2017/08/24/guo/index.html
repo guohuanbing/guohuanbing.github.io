@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/24/guo/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="JavaScript高级与进阶第五天知识点 JavaSceipt 模块化 sea.js   sea.js三年前已经停止更新了 webpack 类似于 gulp    12345678- seajs  + seajs 就是一个 JavaScript 模块化解决方案  + 说白了就是 js 脚本库  + seajs.use  + define  + require  + exports  + modu">
-<meta property="og:updated_time" content="2017-08-24T15:35:59.997Z">
+<meta property="og:updated_time" content="2017-08-25T02:27:57.602Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="JavaScript高级与进阶第五天知识点 JavaSceipt 模块化 sea.js   sea.js三年前已经停止更新了 webpack 类似于 gulp    12345678- seajs  + seajs 就是一个 JavaScript 模块化解决方案  + 说白了就是 js 脚本库  + seajs.use  + define  + require  + exports  + modu">
@@ -86,10 +86,47 @@
 </li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">- seajs</div><div class="line">  + seajs 就是一个 JavaScript 模块化解决方案</div><div class="line">  + 说白了就是 js 脚本库</div><div class="line">  + seajs.use</div><div class="line">  + define</div><div class="line">  + require</div><div class="line">  + exports</div><div class="line">  + module.exports</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- require 用于加载</div><div class="line">- exports 属于 module的内部成员</div><div class="line">- module  用于到处</div><div class="line">  + 用法为 module.exports.对象名 = 需要挂载的对象</div></pre></td></tr></table></figure>
+<h2 id="使用总结"><a href="#使用总结" class="headerlink" title="使用总结"></a>使用总结</h2><h1 id="seajs的使用流程"><a href="#seajs的使用流程" class="headerlink" title="seajs的使用流程"></a>seajs的使用流程</h1><ul>
+<li>将程序划分为多个模块</li>
+<li>seajs专注解决JavaScript模块</li>
+<li>使用 seajs 可以用 seajs.use() 启动模块<ul>
+<li>相当于将所需js文件集合在一起</li>
+<li>当作启动引擎来使用</li>
+</ul>
+</li>
+<li>每一个模块都写到define回调函数中</li>
+<li>所有模块都是私有作用域，封闭的，只有内部可以访问到</li>
+<li>seajs 有专门的模块与模块之间通信的规则<ul>
+<li>需要将模块通过module.exports.要挂在的对象 = 对象</li>
+<li>用于实现模块通信</li>
+</ul>
+</li>
+<li>define 函数的回调函数有三个参数<ul>
+<li>require 作用 ： 用于加载模块<ul>
+<li>加载并且执行模块代码</li>
+<li>得到模块的导入接口  module.exports</li>
+</ul>
+</li>
+<li>exports</li>
+<li>module 是一个函数，该函数有一个成员对象 exports<ul>
+<li>模块最后会默认 return module.exports</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="总结流程"><a href="#总结流程" class="headerlink" title="总结流程"></a>总结流程</h2><ul>
+<li>使用seajs.use() 启动模块项目</li>
+<li>将所有模块写入 define 中</li>
+<li>将需要依赖的模块用 require() 来导入</li>
+<li>如果需要导出接口对象 通过module.exports 直接挂载</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/24/guo/" data-id="cj6qm2zbx00006kudace1mtgg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/24/guo/" data-id="cj6r9d8kq00004kud4r7u5kmf" class="article-share-link">Share</a>
       
       
     </footer>
