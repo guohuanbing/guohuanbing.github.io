@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/09/12/git 简单操作命令/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="title:git命令git命令shell常用命令1234567891011121314151617181920212223+ pwd 查看当前目录+ cd 切换目录  - cd ../    返回上一页  - cd /c     进入c盘  - cd &apos;文件名&apos;&apos; 进入该文件+ ls ：查看当前目录下的所有文件信息+ mkdir：创建目录，  mkdir ‘目录名字’+ touch ：创建文件">
-<meta property="og:updated_time" content="2017-09-13T01:38:38.673Z">
+<meta property="og:updated_time" content="2017-09-13T01:47:14.644Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="title:git命令git命令shell常用命令1234567891011121314151617181920212223+ pwd 查看当前目录+ cd 切换目录  - cd ../    返回上一页  - cd /c     进入c盘  - cd &apos;文件名&apos;&apos; 进入该文件+ ls ：查看当前目录下的所有文件信息+ mkdir：创建目录，  mkdir ‘目录名字’+ touch ：创建文件">
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -81,9 +81,9 @@
 <li>vi‘文件路径’ ：创建/打开文件</li>
 <li><p>底行模式 shift+：进入</p>
 <ul>
-<li>:w ：保存 ， w +名字 保存为当前路径</li>
+<li>:w ：保存 ， w +名字  另存为 保存为当前路径</li>
 <li>:q ：退出到目录页</li>
-<li>:wq：保存并推出</li>
+<li>:wq：保存并退出</li>
 <li>:e！：撤销更改。到上次保存的状态</li>
 <li>:q！：强制退出不保存</li>
 <li>:set nu ：设置行号</li>
@@ -91,24 +91,24 @@
 </li>
 <li><p>命令模式</p>
 <ul>
-<li>ZZ ：保存并且推出到目录页</li>
+<li>ZZ ：保存并且退出到目录页</li>
 <li>u ：撤销上一次操作，可以多次执行</li>
 <li>dd ：删除当前行</li>
 <li>yy ：复制当前行</li>
 <li>p  ：粘贴</li>
 <li>ctrl+f ：向上翻页</li>
 <li>ctrl+b ：向下翻页</li>
-<li>i/a/A/o/O ：进入命令模式<h2 id="git文件-4-种状态-3-个区"><a href="#git文件-4-种状态-3-个区" class="headerlink" title="git文件 4 种状态 3 个区"></a>git文件 4 种状态 3 个区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+ 4种状态</div><div class="line">    - untraced 未追踪</div><div class="line">    - staged   已暂存</div><div class="line">    - commited 已提交存储到本地仓库</div><div class="line">    - modified 已修改</div><div class="line"></div><div class="line">+ 3个区</div><div class="line">    - 工作目录</div><div class="line">    - 暂存区域</div><div class="line">    - 本地仓库</div></pre></td></tr></table></figure>
-</li>
+<li>i/a/A/o/O ：进入命令模式</li>
 </ul>
 </li>
 </ul>
+<h2 id="git文件-4-种状态-3-个区"><a href="#git文件-4-种状态-3-个区" class="headerlink" title="git文件 4 种状态 3 个区"></a>git文件 4 种状态 3 个区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+ 4种状态</div><div class="line">    - untraced 未追踪</div><div class="line">    - staged   已暂存</div><div class="line">    - commited 已提交存储到本地仓库</div><div class="line">    - modified 已修改</div><div class="line"></div><div class="line">+ 3个区</div><div class="line">    - 工作目录</div><div class="line">    - 暂存区域</div><div class="line">    - 本地仓库</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">- 配置信息命令</div><div class="line">    + git config --global user.name 用户名</div><div class="line">    + git config --global user.email 邮箱</div><div class="line">- 查看文件状态</div><div class="line">    + git status</div><div class="line">- 查看提交记录 (q)退出</div><div class="line">    + git <span class="built_in">log</span></div><div class="line">- 添加到暂存区</div><div class="line">    + git add</div><div class="line">- 暂存区覆盖工作区内容</div><div class="line">    + git checkout</div><div class="line">- 暂存区提交到仓库</div><div class="line">    + git commit -m ‘改动信息’</div><div class="line">- 回到特定版本</div><div class="line">    + git reset --hard &lt;commit&gt;</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/12/git 简单操作命令/" data-id="cj7icziik0000w8ud9sz1rfpr" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/09/12/git 简单操作命令/" data-id="cj7idhpgs0000ikud0u1y07lf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -119,7 +119,7 @@
   
   
     <a href="/2017/08/24/seajs/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">sea.js</div>
     </a>
   
@@ -152,7 +152,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -185,7 +185,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
