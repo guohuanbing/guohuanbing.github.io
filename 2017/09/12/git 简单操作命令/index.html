@@ -1,115 +1,69 @@
-<!DOCTYPE html>
-<html>
-  <!-- Html Head Tag-->
-  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="John Doe">
-  <!-- Open Graph Data -->
-  <meta property="og:title" content="Hexo"/>
-  <meta property="og:description" content="" />
-  <meta property="og:site_name" content="Hexo"/>
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://yoursite.com"/>
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
 
-  <!-- Site Title -->
-  <title>Hexo</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  
-  <link rel="stylesheet" href="/css/style.light.css">
-
-  <!-- Google Analytics -->
-  
-
-</head>
-
-  <body>
-    <!-- Page Header -->
-
-
-<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-title with-background-image">
-          <p class="title">无标题文章</p>
-          <p class="subtitle"></p>
-        </div>
-        <div class="site-menu with-background-image">
-          <ul>
-            
-              <li>
-                <a href="/">
-                  
-                  Home
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="/archives">
-                  
-                  Archives
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://github.com/levblanc">
-                  
-                  Github
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="mailto:levblanc@163.com">
-                  
-                  Email
-                  
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-<article>
-  <div class="container typo">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-info text-muted">
-          
-            <!-- Author -->
-            <span class="author info">By John Doe</span>
-          
-          <!-- Date -->
-          <span class="date-time info">On
-            <span class="date">2017-09-12</span>
-            <span class="time">15:34:24</span>
-          </span>
-          
-        </div>
-        <!-- Tags -->
+<body>
+<div class="cube-body">
+    <nav id="cube-top-memu" class="cube-menu">
+    <ul class="cube-menu-collapse">
         
-        <!-- Post Main Content -->
-        <div class="post-content">
-          <hr>
+        <li>
+            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
+            <a href="/">首页</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
+            <a href="/archives">归档</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
+            <a href="/about-me">关于我</a>
+        </li>
+        
+    </ul>
+</nav>
+<nav class="cube-side-menu" id="cube-side-menu">
+    <ul class="cube-menu-list">
+        
+        <li>
+            <a class="lrc-control">オープン歌詞</a>
+        </li>
+        
+        <li>
+            <a class="scroll-to-top">トップに戻ります</a>
+        </li>
+    </ul>
+</nav>
+    
+    <div class="cube-content">
+        <div class="cube-left">
+            <div class="cube-article">
+    <h1 class="title"></h1>
+    
+    <div class="cube-article-header">
+        <div class="cube-article-date">
+            <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
+            <!-- moment.js对象 -->
+            2017-09-12
+        </div>
+        <div class="cube-article-tags">
+    <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
+    
+</div>
+    </div>
+    
+    <div class="cube-article-content cube-markdown">
+        
+        <hr>
 <h2 id="title-git命令"><a href="#title-git命令" class="headerlink" title="title:git命令"></a>title:git命令</h2><h1 id="git命令"><a href="#git命令" class="headerlink" title="git命令"></a>git命令</h1><h2 id="shell常用命令"><a href="#shell常用命令" class="headerlink" title="shell常用命令"></a>shell常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+ <span class="built_in">pwd</span> 查看当前目录</div><div class="line">+ <span class="built_in">cd</span> 切换目录</div><div class="line">  - <span class="built_in">cd</span> ../    返回上一页</div><div class="line">  - <span class="built_in">cd</span> /c     进入c盘</div><div class="line">  - <span class="built_in">cd</span> <span class="string">'文件名'</span><span class="string">' 进入该文件</span></div><div class="line"><span class="string">+ ls ：查看当前目录下的所有文件信息</span></div><div class="line"><span class="string">+ mkdir：创建目录，  mkdir ‘目录名字’</span></div><div class="line"><span class="string">+ touch ：创建文件，  touch ‘文件名字’</span></div><div class="line"><span class="string">+ cat ： 查看文件全部内容，  cat 文件名字.后缀名</span></div><div class="line"><span class="string">+ less ： 如more /etc/passwd、less /etc/passwd</span></div><div class="line"><span class="string">+ rm ： 删除某个文件 ，  rm ‘文件名字’</span></div><div class="line"><span class="string">+ rmdir ：删除某个目录 ，rmdir ‘目录名字’</span></div><div class="line"><span class="string">+ mv ： 移动某个文件或者重命名 ， mv ‘文件名’ ‘移动目录/名字’</span></div><div class="line"><span class="string">+ cp ：复制某个文件 ，cp ‘文件名’ ‘移动到的目录’</span></div><div class="line"><span class="string">+ tab：自动补全，连续按两次会将匹配到的全部打印</span></div><div class="line"><span class="string">+ &gt; 、&gt;&gt;：重定向，如echo hello world! &gt; README.md，&gt;覆盖 &gt;&gt;追加</span></div><div class="line"><span class="string">    - echo ‘文件名1’ &gt; ‘文件名2’ 文件2覆盖文件1</span></div><div class="line"><span class="string">    - echo ‘文件名1’ &gt;&gt; ‘文件名2’ 文件2追加到文件1 ，存在两个</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">+ | ：管道符可以将多个命令连接使用，上一次（命令）的执行结果当成下一次（命令）参数</span></div><div class="line"><span class="string">+ grep ：匹配内容，一般结合管道使用</span></div><div class="line"><span class="string">    - 比如 ls | grep 需要匹配的'</span>字符串<span class="string">'/过滤出的结果</span></div></pre></td></tr></table></figure>
 <h2 id="vi-操作"><a href="#vi-操作" class="headerlink" title="vi 操作"></a>vi 操作</h2><ul>
 <li>vi‘文件路径’ ：创建/打开文件</li>
@@ -139,42 +93,118 @@
 <h2 id="git文件-4-种状态-3-个区"><a href="#git文件-4-种状态-3-个区" class="headerlink" title="git文件 4 种状态 3 个区"></a>git文件 4 种状态 3 个区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+ 4种状态</div><div class="line">    - untraced 未追踪</div><div class="line">    - staged   已暂存</div><div class="line">    - commited 已提交存储到本地仓库</div><div class="line">    - modified 已修改</div><div class="line"></div><div class="line">+ 3个区</div><div class="line">    - 工作目录</div><div class="line">    - 暂存区域</div><div class="line">    - 本地仓库</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">- 配置信息命令</div><div class="line">    + git config --global user.name 用户名</div><div class="line">    + git config --global user.email 邮箱</div><div class="line">- 查看文件状态</div><div class="line">    + git status</div><div class="line">- 查看提交记录 (q)退出</div><div class="line">    + git <span class="built_in">log</span></div><div class="line">- 添加到暂存区</div><div class="line">    + git add</div><div class="line">- 暂存区覆盖工作区内容</div><div class="line">    + git checkout</div><div class="line">- 暂存区提交到仓库</div><div class="line">    + git commit -m ‘改动信息’</div><div class="line">- 回到特定版本</div><div class="line">    + git reset --hard &lt;commit&gt;</div></pre></td></tr></table></figure>
 
+    </div>
+</div>
+
+<div class="cube-article-nav">
+    <ul>
+        
+        <li class="prev">
+            <a href="/2017/09/13/git 远程操作/">
+                <i class="cube-icon cube-prev" aria-hidden="true"></i>
+                git 远程操作及回滚
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/08/24/seajs/">
+                sea.js
+                <i class="cube-icon cube-next" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+
         </div>
-      </div>
+        <div class="cube-right">
+            
+
+<div class="cube-search cube-sidebar" id="cube-search">
+    <div class="search-container">
+        <input type="text" placeholder="検索" class="cube-search-input" id="cube-search-input">
+        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
     </div>
-  </div>
-</article>
-
-
-
-    <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <p class="copyright text-muted">
-          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
-          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
-        <p class="copyright text-muted">
-          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-    <!-- After Footer Scripts -->
-<script src="/js/highlight.pack.js"></script>
+    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
+</div>
 <script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
-    codeBlocks.forEach(function(block, index) {
-      hljs.highlightBlock(block);
-    });
-  });
+    (function (window) {
+        'use strict';
+        window.searchModule = {}
+        window.searchModule.JSONUrl = '/content.json'
+        window.searchModule.rootUrl = '/'
+    })(window)
 </script>
+<div class="cube-search-form">
+    <div class="cube-search-control">
+        <input type="text" placeholder="検索" class="search-input">
+        <a class="close-button">
+            <i class="cube-icon cube-close" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="cube-search-result"></div>
+</div>
 
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
+    <div class="title">
+        <a>リンク</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png">
+            <a href="https://blog.micblo.com/" target="_blank">罗大佬</a>
+        </li>
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/DIYgod.jpg">
+            <a href="https://www.anotherhome.net/" target="_blank">DIYgod</a>
+        </li>
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="/images/friend_links.jpg ">
+            <a href="https://aonosora.com/" target="_blank">咪西西の部落格</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+    </div>
+</div>
+<footer class="cube-footer">
+    
+© 2017 John Doe
+
+<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+</footer>
+<!-- inject:script -->
+<script src="/js/script.js"></script>
+<!-- endinject -->
+<div class="cube-loading out"></div>
+</body>
 </html>
-
